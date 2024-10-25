@@ -18,19 +18,19 @@ const shoppingData = [
   {
     "Jantares": {
       "Jantar 1": [
-        { "itemId": 9, "name": "Macarrão tipo ninho (200g)", "checked": false },
-        { "itemId": 10, "name": "Bacon em cubos (150g)", "checked": false },
-        { "itemId": 11, "name": "Calabresa (150g)", "checked": false },
+        { "itemId": 9, "name": "Macarrão tipo ninho", "checked": false },
+        { "itemId": 10, "name": "Bacon em cubos", "checked": false },
+        { "itemId": 11, "name": "Calabresa", "checked": false },
         { "itemId": 12, "name": "Creme de leite fresco", "checked": false },
-        { "itemId": 13, "name": "Queijo parmesão ralado (2 colheres de sopa)", "checked": false },
-        { "itemId": 14, "name": "Manteiga (1 colher de sopa)", "checked": false },
+        { "itemId": 13, "name": "Queijo parmesão ralado", "checked": false },
+        { "itemId": 14, "name": "Manteiga", "checked": false },
         { "itemId": 15, "name": "Azeite", "checked": false }
       ],
       "Jantar 2": [
         { "itemId": 16, "name": "Bife grosso (contra-filé, ancho ou ribeye)", "checked": false },
-        { "itemId": 17, "name": "Arroz (1 xícara)", "checked": false },
-        { "itemId": 18, "name": "Caldo de carne ou água (2 xícaras)", "checked": false },
-        { "itemId": 19, "name": "Vinho tinto (1/2 xícara, opcional)", "checked": false }
+        { "itemId": 17, "name": "Arroz", "checked": false },
+        { "itemId": 18, "name": "Caldo de carne", "checked": false },
+        { "itemId": 19, "name": "Vinho tinto", "checked": false }
       ]
     }
   },
