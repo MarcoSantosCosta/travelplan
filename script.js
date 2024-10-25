@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     clearButton.addEventListener("click", clearLocalStorage);
   
     let existingData = localStorage.getItem("shoppingList") ? JSON.parse(localStorage.getItem("shoppingList")) : [];
-    const newData = shoppingData; // Assuming shoppingData is loaded from data.js
+    const newData = shoppingData;
   
     const mergedData = mergeShoppingData(existingData, newData);
     localStorage.setItem("shoppingList", JSON.stringify(mergedData));
@@ -87,11 +87,16 @@ document.addEventListener("DOMContentLoaded", () => {
       li.appendChild(checkbox);
       li.appendChild(document.createTextNode(item.name));
       li.classList.toggle("checked", checkbox.checked);
+  
+      li.addEventListener("click", () => {
+        checkbox.checked = !checkbox.checked;
+        checkbox.dispatchEvent(new Event("change"));
+      });
+  
       ul.appendChild(li);
     });
     return ul;
   }
-  
   function toggleItemStatus(itemId, isChecked, listItem) {
     const data = JSON.parse(localStorage.getItem("shoppingList"));
     data.forEach(section => {
